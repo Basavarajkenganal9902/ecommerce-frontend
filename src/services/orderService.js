@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:8080/api/orders";
+const API_URL = `${import.meta.env.VITE_API_BASE_URL}/orders`;
 
 export async function createOrder(orderData) {
     const response = await fetch(API_URL, {
